@@ -1,6 +1,19 @@
+Technical Test:
+
+1. Inside folder `migrations/..`
+
+2. Inside folder `domain/model/..`
+
+3. Run `go run main.go serve` to run the application
+
+4. Inside folder `domain/model/..`
+
+5. Run `go run main.go serve` to run the application and hit `{localendpoint}/v1/order-details` with `GET` method 
+
+
 System Design:
 
-1.  Decoupling a monolithic ecommerce platform into microservices involves breaking down the large, monolithic codebase into smaller, independent services that can be developed, deployed, and managed separately. This approach offers several benefits, such as increased scalability, resiliency, and agility. Here are the steps to decouple a monolithic ecommerce platform into microservices:
+1.  Decoupling a monolithic ecommerce platform into microservices involves breaking down the large, monolithic codebase into    smaller, independent services that can be developed, deployed, and managed separately. This approach offers several benefits, such as increased scalability, resiliency, and agility. Here are the steps to decouple a monolithic ecommerce platform into microservices:
         a. Identify functional boundaries: The first step is to identify the functional boundaries of the ecommerce platform. This typically involves dividing the platform into smaller components based on their functionality, such as product management, inventory management, order management, customer management, and payment processing.
         b. Define microservices: Based on the functional boundaries, define the microservices that will be created. Each microservice should represent a single, self-contained function that can be managed independently.
         c. Refactor the code: Once the microservices have been defined, the code can be refactored to create separate codebases for each microservice. This involves extracting the code relevant to each microservice and organizing it in a way that makes it easy to maintain and deploy.
